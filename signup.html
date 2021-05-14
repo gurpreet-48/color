@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body onload="myFunction()" style="margin:0;background-color: black;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <!-- survey section-->
+    
+    <div class="survey">
+        <div class="subs">
+            <h1>fill in the details to subscribe</h1>
+            <div class="iframebox">
+                <iframe onload="loaded();" id="oc-contact"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSd_C3vvhJAQEFr3_TyvYbeLXMbz8r5ghKod1OfVZv9Ia4Al_A/viewform?embedded=true"
+                width="700" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+            
+                <button class="backBtn" onclick="document.location='index.html'"><a href="index.html">Back</a></button>
+        </div>
+
+    </div>
+
+    <script>
+        var myVar;
+        function myFunction() {
+            myVar = setTimeout(showPage, 500);
+        }
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+
+
+
+         var loadCounter = 0;
+         const iframe = document.getElementById("oc-contact")
+
+            function loaded() {
+
+                loadCounter += 1;
+
+                if (loadCounter % 2 === 0 && window.innerWidth > 600) {
+                    iframe.style.height = "400px"
+                }
+                else if (loadCounter % 2 === 0 && window.innerWidth < 600) {
+                    iframe.style.height = "460px"
+                }
+                else if (loadCounter % 2 === 1 && window.innerWidth > 600 ){ 
+                    iframe.style.height = "1470px"
+                }
+                 else  if (loadCounter % 2 === 1 && window.innerWidth < 600){
+                    iframe.style.height = "1570px"
+                }
+
+            }
+
+
+    </script>
+</body>
+</html>

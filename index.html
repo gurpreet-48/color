@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+</head>
+<body onload="myFunction()" style="margin:0;background-color:black;">
+
+<div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="#home" id="navbarLogo">COLOR
+            </a>
+            <div class="navbarToggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="#home" class="navbarLinks" id="home-Page">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="#about" class="navbarLinks" id="about-Page">About</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="#services" class="navbarLinks" id="services-Page">Services</a>
+                </li>
+                <li class="navbarBtn">
+                    <a href="#sign-up" class="button" id="signup">Signup</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+<!-- hero section -->
+    <div class="hero" id="home">
+        <div class="heroContainer">
+            <h1 class="heroHeading">Choose your <span>colors</span></h1>
+            <p class="heroDescription">Unlimited Possibility</p>
+            <button class="mainBtn" onclick="document.location='signup.html'"><a href="signup.html">Explore</a></button>
+        </div>
+    </div>
+
+
+<!-- to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+
+    <!--About Section-->
+<div class="main" id="about">
+    <div class="mainContainer">
+        <div class="mainImgContainer">
+            <div class="mainImgCard"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="mainContent">
+            <h1>What do we do?</h1>
+            <h2>We help businesses scale</h2>
+            <p>Schedule a call to know more about our services</p>
+            <button class="mainBtn"onclick="document.location='signup.html'"><a href="signup.html">Schedule Call</a></button>
+        </div>
+    </div>
+</div>
+
+<!-- services section -->
+<div class="services" id="services">
+    <h1>Our services</h1>
+    <div class="servicesWrapper">
+        <div class="servicesCard">
+            <h2>Custom Colorways</h2>
+            <p>AI Powered Technology</p>
+            <div class="servicesBtn"><button onclick="document.location='signup.html'">Get Started</button></div>
+        </div>
+        <div class="servicesCard">
+            <h2>Are you Ready</h2>
+            <p>Take the Leap</p>
+            <div class="servicesBtn"><button onclick="document.location='signup.html'">Get Started</button></div>
+        </div>
+        <div class="servicesCard">
+            <h2>Full of Gradients</h2>
+            <p>100 Combinations</p>
+            <div class="servicesBtn"><button onclick="document.location='signup.html'">Get Started</button></div>
+        </div>
+        <div class="servicesCard">
+            <h2>Infinite Choices</h2>
+            <p>1000's of colors</p>
+            <div class="servicesBtn"><button onclick="document.location='signup.html'">Get Started</button></div>
+        </div>
+    </div>
+</div>
+
+<!-- feature section -->
+<div class="main" id="sign-up">
+    <div class="mainContainer">
+        <div class="mainContent">
+            <h1>Join our Team</h1>
+            <h2>Sign Up today</h2>
+            <p>See what makes us different </p>
+            <button class="mainBtn"onclick="document.location='signup.html'"><a href="signup.html">Schedule Call</a></button>
+        </div>
+        <div class="mainImgContainer">
+            <div class="mainImgCard" id="card-2"><i class="fas fa-users"></i></div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footerContainer">
+    <div class="footerLinks">
+        <div class="footerLinkWrapper">
+            <div class="footerLinkItems">
+                <h2>
+                    About Us
+                </h2>
+                <a href="/">How it works</a>
+                <a href="/">Testomonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Terms of Service</a>
+            </div>
+            <div class="footerLinkItems">
+                <h2>
+                    Contact Us
+                </h2>
+                <a href="/">Contact</a>
+                <a href="/">Support</a>
+                <a href="/">Destination</a>
+                <a href="/">Destination</a>
+            </div>
+        </div>    
+        <div class="footerLinkWrapper">
+            <div class="footerLinkItems">
+                <h2>
+                    Video
+                </h2>
+                <a href="/">Submit Video</a>
+                <a href="/">Ambassadors</a>
+                <a href="/">Agency</a>
+                <a href="/">Terms of Service</a>
+            </div>
+            <div class="footerLinkItems">
+                <h2>
+                    Social Media
+                </h2>
+                <a href="/">Instagram</a>
+                <a href="/">Facebook</a>
+                <a href="/">Twitter</a>
+                <a href="/">Youtube</a>
+            </div>
+        </div>
+    </div>
+    <section class="socialMedia">
+        <div class="socialMediaWrap">
+            <div class="footerLogo">
+                <a href="/" id="footerLogo">COLOR</a>
+            </div>    
+                <p class="websiteRights">&#169 COLOR 2021. All rights reserved </p>
+                <div class="socialIcons">
+                    <a href="/" class="socialIconLink" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="/" class="socialIconLink"  target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/" class="socialIconLink" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="/" class="socialIconLink" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="socialIconLink" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js" ></script>
+</body>
+</html>
